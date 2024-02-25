@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        client-id: my-client-id
+        client-secret: my-client-secret
+
+
+app:
+  jwt:
+    key: ${APP_JWT_SECRET}
+    algorithm: ${APP_JWT_ALGORITHM}
+    issuer: http://localhost:8080
+    expiresIn: 1m
